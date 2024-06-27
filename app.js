@@ -1,1 +1,4 @@
-console.log("Hello, GitHub Projects!");
+// Example functionality (replace with your actual functionality)
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('Document loaded.');
+});
