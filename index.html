@@ -4,39 +4,192 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning GitHub Projects</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to GitHub Projects</h1>
-    </header>
+    <h1>Learning GitHub Projects</h1>
 
-    <main>
-        <section>
-            <h2>About</h2>
-            <p>This is a sample project to learn GitHub Projects.</p>
-        </section>
+    <h2>Step 1: Create a New Repository</h2>
+    <ol>
+        <li>Go to GitHub and log in.</li>
+        <li>Click on the "+" icon in the upper-right corner and select "New repository."</li>
+        <li>Name your repository (e.g., <code>learning-github-projects</code>).</li>
+        <li>Add a description if you like.</li>
+        <li>Choose "Public" or "Private" depending on your preference.</li>
+        <li>Check "Initialize this repository with a README."</li>
+        <li>Click "Create repository."</li>
+    </ol>
 
-        <section>
-            <h2>Features</h2>
+    <h2>Step 2: Create a GitHub Project</h2>
+    <ol>
+        <li>Navigate to your new repository.</li>
+        <li>Click on the "Projects" tab.</li>
+        <li>Click "Create a project."</li>
+        <li>Name your project (e.g., <code>Project Learning</code>).</li>
+        <li>Optionally, add a description.</li>
+        <li>Click "Create project."</li>
+    </ol>
+
+    <h2>Step 3: Set Up Your Project Board</h2>
+    <ol>
+        <li>After creating the project, you'll see a kanban-style board.</li>
+        <li>By default, you'll have three columns: "To do," "In progress," and "Done."</li>
+        <li>You can add more columns by clicking the "+ Add column" button.</li>
+    </ol>
+
+    <h2>Step 4: Add Issues to Your Project</h2>
+    <ol>
+        <li>Navigate to the "Issues" tab of your repository.</li>
+        <li>Click "New issue."</li>
+        <li>Title your issue (e.g., <code>Set up project structure</code>).</li>
+        <li>Add a description if needed.</li>
+        <li>Click "Submit new issue."</li>
+        <li>Repeat to create more issues (e.g., <code>Create initial files</code>, <code>Set up CI/CD</code>, etc.).</li>
+    </ol>
+
+    <h2>Step 5: Add Issues to Your Project Board</h2>
+    <ol>
+        <li>Go back to your project board.</li>
+        <li>Click on "+ Add cards" in the "To do" column.</li>
+        <li>You'll see a list of issues you created. Drag them into the "To do" column.</li>
+    </ol>
+
+    <h2>Step 6: Move Issues Across Columns</h2>
+    <ol>
+        <li>As you work on tasks, you can drag issues from "To do" to "In progress" and then to "Done" as they are completed.</li>
+    </ol>
+
+    <h2>Sample Repository and Issues</h2>
+    <p><strong>Repository:</strong> <code>learning-github-projects</code></p>
+    <p><strong>Issues:</strong></p>
+    <ol>
+        <li><strong>Set up project structure</strong>
             <ul>
-                <li>Organize tasks using GitHub Projects.</li>
-                <li>Automate CI/CD with GitHub Actions.</li>
-                <li>Deploy using GitHub Pages.</li>
+                <li>Create a basic directory structure.</li>
+                <li>Initialize npm (if using Node.js).</li>
             </ul>
-        </section>
+        </li>
+        <li><strong>Create initial files</strong>
+            <ul>
+                <li>Create <code>index.html</code>, <code>style.css</code>, and <code>app.js</code>.</li>
+            </ul>
+        </li>
+        <li><strong>Set up CI/CD</strong>
+            <ul>
+                <li>Configure GitHub Actions for continuous integration.</li>
+            </ul>
+        </li>
+        <li><strong>Write documentation</strong>
+            <ul>
+                <li>Create a <code>README.md</code> with project details.</li>
+            </ul>
+        </li>
+        <li><strong>Deploy application</strong>
+            <ul>
+                <li>Set up deployment to GitHub Pages or a hosting service.</li>
+            </ul>
+        </li>
+    </ol>
 
-        <section>
-            <h2>Get Started</h2>
-            <p>Clone the repository and start learning!</p>
-            <code>git clone https://github.com/your-username/learning-github-projects.git</code>
-        </section>
-    </main>
+    <h2>Project Board: <code>Project Learning</code></h2>
+    <p><strong>Columns:</strong></p>
+    <ul>
+        <li><strong>To do</strong>
+            <ul>
+                <li>Set up project structure</li>
+                <li>Create initial files</li>
+                <li>Set up CI/CD</li>
+            </ul>
+        </li>
+        <li><strong>In progress</strong>
+            <ul>
+                <li>Write documentation</li>
+            </ul>
+        </li>
+        <li><strong>Done</strong>
+            <ul>
+                <li>Deploy application</li>
+            </ul>
+        </li>
+    </ul>
 
-    <footer>
-        <p>&copy; 2024 Your Name</p>
-    </footer>
+    <h2>Example Actions</h2>
+    <h3>Setting Up Project Structure</h3>
+    <pre><code>mkdir src
+touch src/index.html src/style.css src/app.js
+npm init -y</code></pre>
 
-    <script src="app.js"></script>
+    <h3>Creating Initial Files</h3>
+    <h4>index.html</h4>
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Learning GitHub Projects&lt;/title&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Welcome to GitHub Projects&lt;/h1&gt;
+    &lt;script src="app.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+    <h4>style.css</h4>
+    <pre><code>body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}</code></pre>
+
+    <h4>app.js</h4>
+    <pre><code>console.log("Hello, GitHub Projects!");</code></pre>
+
+    <h2>GitHub Actions Workflow (CI/CD)</h2>
+    <p>Create a <code>.github/workflows/ci.yml</code> file:</p>
+    <pre><code>name: CI
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+    - run: npm install
+    - run: npm test</code></pre>
+
+    <h2>Deploy to GitHub Pages</h2>
+    <ol>
+        <li>In your repository, go to Settings > Pages.</li>
+        <li>Select the branch you want to deploy from (e.g., <code>main</code>).</li>
+        <li>Click "Save."</li>
+    </ol>
+
+    <h2>Summary</h2>
+    <p>You've now created a basic GitHub project with issues, a project board, and initial setup files. You can expand this project by adding more issues, customizing your project board, and setting up more advanced workflows.</p>
+    <p>Feel free to ask if you have any questions or need further assistance!</p>
 </body>
 </html>
